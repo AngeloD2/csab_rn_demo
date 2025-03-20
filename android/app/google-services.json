@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1068000214288",
+    "project_id": "reklamador-2f407",
+    "storage_bucket": "reklamador-2f407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068000214288:android:50988ae4732c4568da7995",
+        "android_client_info": {
+          "package_name": "com.reklamador.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQyE-n9VaroJM2ItS7fs3LyOTGeVZ36mE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
