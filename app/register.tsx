@@ -61,7 +61,7 @@ export default function RegisterScreen() {
           </View>
 
           <View style={styles.titleContainer}>
-            <ThemedText type="title"> Reklamador </ThemedText>
+            <ThemedText type="title"> CSAB Mobile Demo </ThemedText>
             <ThemedText type="subtitle"> Registration  </ThemedText>
           </View>
 

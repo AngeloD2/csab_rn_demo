@@ -56,7 +56,7 @@ export default function LoginScreen() {
         <ThemedView style={styles.screen}>
 
           <View style={styles.titleContainer}>
-            <ThemedText type="title"> Reklamador </ThemedText>
+            <ThemedText type="title"> CSAB Mobile Demo </ThemedText>
           </View>
 
           <ThemedView style={[styles.screenContent, { paddingBottom: 32 }]}>

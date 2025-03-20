@@ -9,23 +9,6 @@ buildscript {
         kotlinVersion = findProperty('android.kotlinVersion') ?: '1.9.23'
 
         ndkVersion = "26.1.10909125"
-
-        set('react-native', [
-                versions: [
-                        // Overriding Build/Android SDK Versions
-                        android : [
-                                minSdk    : 23, // 23+ if using auth module
-                                targetSdk : 34,
-                                compileSdk: 34,
-                        ],
-
-                        // Overriding Library SDK Versions
-                        firebase: [
-                                // Override Firebase SDK Version
-                                bom           : "33.3.0"
-                        ],
-                ],
-        ])
     }
     repositories {
         google()
@@ -41,8 +24,6 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
-apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 
 allprojects {
     repositories {

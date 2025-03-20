@@ -3,6 +3,7 @@ import { StyleSheet, Button, View, Text } from 'react-native';
 import { HelloWave } from '@/components/HelloWave';
 import { getAuth, signOut } from '@react-native-firebase/auth';
 import { Redirect, useRouter } from 'expo-router';
+import { ThemedText } from '@/components/ThemedText';
 
 export default function HomeScreen() {
   const auth = getAuth();
@@ -31,8 +32,14 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <HelloWave />
 
+      <View style={styles.titleContainer}>
+        <ThemedText type='title'> Welcome  </ThemedText>
+        <ThemedText type='title'> CSAB 3rd year students  </ThemedText>
+      </View>
+
       <Text> Email: {auth.currentUser?.email} </Text>
       <Text> UniqueID: {auth.currentUser?.uid} </Text>
+
 
       <Button title='logout' onPress={handleLogout} />
     </View>
@@ -49,19 +56,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
   titleContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
     gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
   },
 });
